@@ -102,6 +102,7 @@ nav{
     .navbar{
         position: relative;
         .navbar__list{
+            overflow: scroll;
         position: fixed;
         top:53px;
         max-width: 846px;

@@ -96,6 +96,7 @@ nav .navbar__connect .navbar__call .call-number {
     position: relative;
   }
   .navbar .navbar__list {
+    overflow: scroll;
     position: fixed;
     top: 53px;
     max-width: 846px;
@@ -256,6 +257,102 @@ nav .navbar__connect .navbar__call .call-number {
   .hero {
     background-size: 100% 100%;
   }
+}
+main {
+  max-width: 1600px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.conteiner {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.conteiner .main__title {
+  margin-top: 140px;
+  margin-bottom: 80px;
+  color: var(--, #282B22);
+  text-align: center;
+  /* заголовок_H2 */
+  font-family: "Raleway";
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%; /* 57.5px */
+  text-transform: uppercase;
+}
+.conteiner .main__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 140px;
+}
+.conteiner .main__cards .main__card {
+  border-left: 1px solid rgba(40, 43, 34, 0.2);
+  padding-left: 30px;
+}
+.conteiner .main__cards .third_card {
+  border-right: 1px solid rgba(40, 43, 34, 0.2);
+  padding-right: 30px;
+}
+
+.main__card .card__number {
+  color: #282B22;
+  opacity: 0.5;
+  /* Заголовок_H5 */
+  font-family: "Raleway";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 24px */
+}
+.main__card .card__name {
+  color: #3D4A39;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  /* Заголовок_H5 */
+  font-family: "Raleway";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 24px */
+}
+.main__card .card__image {
+  width: 330px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card__image {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .main__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card__image {
+    width: 300px;
+  }
+}
+.care {
+  max-width: 1600px;
+  width: 100%;
+  background-color: #3D4A39;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.care--container {
+  max-width: 996px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
 }
 * {
   padding: 0;
