@@ -1,0 +1,96 @@
+nav {
+  max-width: 1200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  width: 122px;
+  height: 53px;
+}
+nav .navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+nav .navbar__list .navbar__item a {
+  color: #282B22;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+}
+nav .navbar__connect {
+  display: flex;
+  align-items: center;
+  gap: 63px;
+}
+nav .navbar__connect .navbar__icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+nav .navbar__connect .navbar__call {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+nav .navbar__connect .navbar__call .call-number {
+  color: var(--, #3D4A39);
+  font-family: "Lato";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 20px */
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+  }
+  .navbar .navbar__connect {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+  }
+}
+@media screen and (max-width: 892px) {
+  .navbar .navbar__connect {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .navbar .navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 846px) {
+  .navbar .navbar__list {
+    display: none;
+  }
+  .navbar .navbar__connect {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  text-decoration: none;
+  list-style-type: none;
+}/*# sourceMappingURL=main.css.map */
