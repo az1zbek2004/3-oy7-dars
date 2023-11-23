@@ -24,7 +24,11 @@ nav{
         font-style: normal;
         font-weight: 500;
         line-height: 100%; /* 16px */
+        &:hover{
+            color:blue;
+            text-shadow: 2px 3px 3px aqua;
         }
+    }
     }
     .navbar__connect{
         display: flex;
@@ -45,13 +49,17 @@ nav{
             font-family: 'Lato';
             font-size: 20px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 100%; /* 20px */
             text-transform: uppercase;
             }
         }
     }
 
+}
+
+.navbar .bars{
+    display: none;
 }
 @media screen and (max-width: 1000px){
     .navbar{
@@ -83,8 +91,32 @@ nav{
     }
 }
 @media screen and (max-width: 846px){
+    body{
+        background-color:aqua;
+    }
     .navbar{
+        position: relative;
+        background-color:#FFF;
         .navbar__list{
+        background-color:#FFF;
+        position: fixed;
+        top:53px;
+        max-width: 846px;
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20px;
+        margin-top: 40px;
+        margin-right: 200px;
+        margin-left: 50%;
+    }
+    #check{
+        display: none;
+    }
+    #check:focus ~ .navbar__list{
         display: none;
     }
     .navbar__connect{
@@ -92,5 +124,38 @@ nav{
         align-items:center;
         gap: 51px;
     }
+    .navbar__bars{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    .bars{
+        display: flex;
+    }
 }
 }
+@media screen and (max-width: 554px){
+    .navbar{
+        .navbar__connect{
+        display: flex;
+        align-items:center;
+        gap: 10px;
+    }
+    .navbar__bars{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+}
+@media screen and (max-width: 470px){
+    .navbar{
+        .navbar__connect{
+            display: none;
+        }
+        .navbar__list{
+            
+        }
+    }
+}
+
