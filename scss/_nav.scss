@@ -2,11 +2,11 @@ $black:#282B22;
 
 
 nav{
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 20px 0;
+    padding: 20px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +61,12 @@ nav{
 .navbar .bars{
     display: none;
 }
-@media screen and (max-width: 1000px){
+#check{
+    display: none;
+}
+
+// responsive 
+@media screen and (max-width: 1265px){
     .navbar{
         display: flex;
         align-items: center;
@@ -87,18 +92,16 @@ nav{
             justify-content: space-between;
             margin: 0;
             padding: 0;
+            z-index: 10;
+            background-color:#FFF;
         }
     }
 }
 @media screen and (max-width: 846px){
-    body{
-        background-color:aqua;
-    }
+ 
     .navbar{
         position: relative;
-        background-color:#FFF;
         .navbar__list{
-        background-color:#FFF;
         position: fixed;
         top:53px;
         max-width: 846px;
@@ -112,12 +115,6 @@ nav{
         margin-top: 40px;
         margin-right: 200px;
         margin-left: 50%;
-    }
-    #check{
-        display: none;
-    }
-    #check:focus ~ .navbar__list{
-        display: none;
     }
     .navbar__connect{
         display: flex;
@@ -154,7 +151,7 @@ nav{
             display: none;
         }
         .navbar__list{
-            
+            display: none;
         }
     }
 }
