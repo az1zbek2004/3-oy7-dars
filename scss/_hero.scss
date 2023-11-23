@@ -47,6 +47,8 @@
     align-items: flex-start;
     gap: 10px;
     background: #AE7B3C;
+    transition: all 0.5s;
+    cursor: pointer;
     box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.05);
 
     /* text_botton */
@@ -57,6 +59,9 @@
     font-weight: 700;
     line-height: 100%; /* 16px */
     margin-bottom: 120px;
+    &:hover{
+        background: #c57b22;
+    }
     }
 
     .footer{
